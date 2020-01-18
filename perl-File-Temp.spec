@@ -2,7 +2,7 @@
 Name:           perl-File-Temp
 # Keep 2-digit version to align with future versions
 Version:        %(echo '%{cpan_version}' | sed 's/\(\...\)\(.\)/\1.\2/')
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Return name and handle of a temporary file safely
 License:        GPL+ or Artistic
 Group:          Development/Libraries
@@ -77,6 +77,9 @@ make test
 %{_mandir}/man3/*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.23.01-3
+- Mass rebuild 2013-12-27
+
 * Mon Jul 29 2013 Petr Pisar <ppisar@redhat.com> - 0.23.01-2
 - Specify all dependencies
 
